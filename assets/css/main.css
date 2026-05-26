@@ -107,7 +107,8 @@ h5 {
 }
 
 h6 {
-  font-size: 20px;
+  font-size: 36px;
+    line-height: 1.2;
   font-weight: 600;
   line-height: 145%;
 }
@@ -445,7 +446,8 @@ span {
     font-size: 24px;
   }
   h5 {
-    font-size: 20px;
+    font-size: 36px;
+    line-height: 1.2;
   }
   h6 {
     font-size: 18px;
@@ -459,7 +461,8 @@ span {
 }
 @media (max-width: 991px) {
   h1 {
-    font-size: 20px;
+    font-size: 36px;
+    line-height: 1.2;
   }
   h2 {
     font-size: 36px;
@@ -468,7 +471,8 @@ span {
     font-size: 29px;
   }
   h4 {
-    font-size: 20px;
+    font-size: 36px;
+    line-height: 1.2;
   }
   h5 {
     font-size: 19px;
@@ -641,7 +645,8 @@ footer {
 }
 
 .about-content-v3 .global-counting .counting-item h6 span {
-  font-size: 20px;
+  font-size: 36px;
+    line-height: 1.2;
 }
 .about-content-v3 .global-counting .counting-item .pra-clr {
   font-size: 14px;
@@ -1042,7 +1047,8 @@ footer {
 }
 @media (max-width: 767px) {
   .awards-wrapper .awards-content p {
-    font-size: 20px;
+    font-size: 36px;
+    line-height: 1.2;
   }
 }
 @media (max-width: 575px) {
@@ -1279,7 +1285,7 @@ footer {
 }
 
 .hero-section-version1 {
-  padding: 230px 5px 80px;
+  padding: 140px 5px 80px;
   z-index: 1;
 }
 .hero-section-version1 .sfot-element1 {
@@ -1571,6 +1577,186 @@ footer {
     margin-top: -17px;
   }
 }
+
+/* ===== Hero Section Fixes (2026-05-26) ===== */
+.hero-headline-row {
+  display: inline;
+}
+
+.hero-cta-wrapper {
+  margin-top: 32px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.hero-primary-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background-color: var(--theme);
+  color: var(--black);
+  border-radius: 100px;
+  padding: 16px 36px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.hero-primary-cta:hover {
+  background-color: var(--white);
+  color: var(--black);
+  transform: translateY(-2px);
+}
+
+.hero-primary-cta i {
+  transition: transform 0.3s ease;
+}
+
+.hero-primary-cta:hover i {
+  transform: translateX(4px);
+}
+
+.hero-cta-sub {
+  margin-top: 16px;
+  font-size: 0.95rem;
+  color: rgba(255,255,255,0.6);
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.hero-decorative-img {
+  position: absolute;
+  top: 60%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 760px;
+  max-width: 100%;
+  opacity: 0.7;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.hero-decorative-img img {
+  width: 100%;
+  height: auto;
+}
+
+.hero-banner-content {
+  position: relative;
+  color: #d1ff00;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.2rem;
+  font-weight: 600;
+  line-height: 1.4;
+  overflow: hidden;
+  min-height: 120px;
+}
+
+.hero-decorative-img-secondary {
+  position: absolute;
+  bottom: -10px;
+  right: -3vw;
+  width: 450px;
+  max-width: 100%;
+  opacity: 0.3;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.hero-decorative-img-secondary img {
+  width: 50%;
+  height: auto;
+}
+
+.ipad-body-content {
+  position: relative;
+  z-index: 1;
+  padding-top: 10vw;
+}
+
+.ipad-body-content .banner-text {
+  line-height: 1.3;
+}
+
+.ipad-body-content .banner-text small {
+  display: inline-block;
+}
+
+.theme-highlight {
+  color: #e3ff04;
+}
+
+.ipad-cta-bottom {
+  justify-content: center;
+  padding-top: 5vw;
+  display: flex;
+}
+
+.ipad-btn-flex {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.ipad-btn-flex p {
+  padding-left: 5px;
+}
+
+.ipad-arrow-icon {
+  transform: rotate(60deg);
+}
+
+@media (max-width: 991px) {
+  .hero-cta-wrapper {
+    margin-top: 24px;
+    margin-bottom: 32px;
+  }
+  .hero-primary-cta {
+    padding: 14px 28px;
+    font-size: 1rem;
+  }
+  .hero-decorative-img {
+    width: 400px;
+    opacity: 0.4;
+  }
+  .hero-banner-content {
+    font-size: 1.6rem;
+  }
+  .hero-decorative-img-secondary {
+    width: 300px;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-cta-wrapper {
+    text-align: left;
+  }
+  .hero-decorative-img {
+    display: none;
+  }
+  .hero-banner-content {
+    font-size: 1.3rem;
+    min-height: 80px;
+  }
+}
+
+@media (max-width: 575px) {
+  .hero-primary-cta {
+    padding: 12px 24px;
+    font-size: 0.9rem;
+    width: 100%;
+    justify-content: center;
+  }
+  .hero-cta-sub {
+    font-size: 0.85rem;
+  }
+  .hero-banner-content {
+    font-size: 1.1rem;
+  }
+}
+
+/* ===== End Hero Section Fixes ===== */
 
 .hero-section-version2 {
   padding: 190px 2px 130px;
@@ -2223,7 +2409,8 @@ footer {
     padding: 20px;
   }
   .blog-widget-item-022 .thumb .blog-cont .texts {
-    font-size: 20px;
+    font-size: 36px;
+    line-height: 1.2;
     max-width: 402px;
     line-height: 34px;
   }
@@ -2753,7 +2940,8 @@ footer {
 .news-details-area .blog-post-details .comments-area .blog-single-comment .content .head .con h5 {
   margin-bottom: 10px;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 36px;
+    line-height: 1.2;
 }
 .news-details-area .blog-post-details .comments-area .blog-single-comment .content .head .star i {
   color: var(--theme);
@@ -3023,7 +3211,8 @@ footer {
 }
 .case-btn i {
   color: var(--white);
-  font-size: 20px;
+  font-size: 36px;
+    line-height: 1.2;
 }
 .case-btn::before {
   background: var(--white);
@@ -3178,7 +3367,8 @@ footer {
 }
 .case-studyv3-item .case-btn i {
   color: var(--white);
-  font-size: 20px;
+  font-size: 36px;
+    line-height: 1.2;
   transition: all 0.4s ease-in-out;
 }
 .case-studyv3-item .case-btn::before {
@@ -3957,7 +4147,8 @@ footer {
   border: 1px solid var(--border1);
 }
 .accordion-single .header-area {
-  font-size: 20px;
+  font-size: 36px;
+    line-height: 1.2;
   font-weight: 600;
   color: var(--white);
 }
@@ -4015,7 +4206,8 @@ footer {
 .faq .header-area button::after {
   content: "\f101";
   font-family: "FontAwesome";
-  font-size: 20px;
+  font-size: 36px;
+    line-height: 1.2;
   transform: rotate(0deg);
   transition: all 0.5s;
   font-weight: 700;
@@ -4072,7 +4264,8 @@ footer {
 .service-tabing-wrap .accordion-single .accordion-btn::after {
   content: "+";
   font-family: "FontAwesome";
-  font-size: 20px;
+  font-size: 36px;
+    line-height: 1.2;
   transform: rotate(0deg);
   transition: all 0.5s;
   font-weight: 700;
@@ -4588,7 +4781,8 @@ footer {
 }
 @media (max-width: 575px) {
   .footer-widgets-wrapper .single-footer-widget .widget-head h3 {
-    font-size: 20px;
+    font-size: 36px;
+    line-height: 1.2;
   }
 }
 .footer-widgets-wrapper .single-footer-widget .widget-head h4 {
@@ -7735,7 +7929,8 @@ input.main-search-input::placeholder {
 }
 
 .testimonial-version02-section .testimonial-zero-oneitem p {
-  font-size: 20px;
+  font-size: 36px;
+    line-height: 1.2;
   line-height: 32px;
 }
 .testimonial-version02-section .testimonial-zero-oneitem .ratting-area i {
@@ -7851,7 +8046,8 @@ input.main-search-input::placeholder {
   height: 60px;
   line-height: 60px;
   text-align: center;
-  font-size: 20px;
+  font-size: 36px;
+    line-height: 1.2;
   border-radius: 50%;
   transition: all 0.4s ease-in-out;
 }
@@ -8306,7 +8502,7 @@ a.btn-social,
 }
 
 #images {
-  background-image: url('/assets/img/banner/ipad_image_bg.png');
+  background-image: url('../img/banner/ipad_image_bg.png');
   background-size: 90%;
   background-repeat: no-repeat;
   background-position: center center;
